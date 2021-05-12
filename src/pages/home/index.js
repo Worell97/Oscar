@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import PageDefault from '../../components/pageDefault';
 import {Container, Row, Column} from '../../components/grid';
+import ProfilePictureAsset from '../../assets/Perfil.jpg';
+import {ProfilePicture} from './styles';
 
 function Home(){
 
@@ -9,7 +11,9 @@ function Home(){
             <Container>
                 <Row>
                    <Column grid='3'>
-                        <a href="" alt="Picture"></a>Left side bar</Column> 
+                        <ProfilePicture src={ProfilePictureAsset} alr="Eu"/>
+                        <div>Left side bar</div>
+                    </Column> 
                    <Column grid='7'>Content</Column> 
                    <Column grid='2'>Something else</Column> 
                 </Row>
