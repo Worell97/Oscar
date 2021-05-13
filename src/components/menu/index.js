@@ -7,9 +7,11 @@ function Menu(){
     return(
         <nav className="Menu">
             <Link to="/">
-                    Inicio                
+                    Begin                
             </Link>
-            <Button className="ButtonLink">Tecnologias</Button>
+            <Button className="ButtonLink">Technologies</Button>
+            <Button className="ButtonLink">Certification</Button>
+            <Button className="ButtonLink">Github</Button>
     </nav>
     );
 }

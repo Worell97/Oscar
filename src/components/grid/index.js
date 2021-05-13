@@ -37,11 +37,13 @@ export const Row = styled.div`
 
 export const Column = styled.div`
     float: left;
-    padding: 0.25 rem;
+    padding: 0.5rem;
     min-height: 1px;
     box-sizing: border-box;
     width: 100%;
     background-color: var(--blackLighter);
+    border-right: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
 
     @media only screen and (min-width: 768px){
         width: ${props => (props.grid ? props.grid / 12 * 100: '8.33')}%;    
