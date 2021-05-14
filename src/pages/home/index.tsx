@@ -13,11 +13,11 @@ function Home(){
                         <ProfilePicture src={ProfilePictureAsset} alt="Eu"/>
                         <div style={{textAlign: 'center'}}></div>
                     </Column> 
-                    <Column gridLength={9}>
+                    <Column gridLength={1}><></></Column>
+                    <Column gridLength={8}>
                      <CentralizedContent>
                         <Resume>
                             <h1># Hi there My name is Oscar Worell Filho 👋</h1>
-                            <p>Developer</p>
                         </Resume>
                      </CentralizedContent>
                     </Column> 
