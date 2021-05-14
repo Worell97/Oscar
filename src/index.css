@@ -27,7 +27,10 @@
   } 
   
   #root{
-    min-height: calc(100vh - var(--bodyPaddingTop));
+    scroll-behavior: smooth;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    max-height: 90vh;
   }

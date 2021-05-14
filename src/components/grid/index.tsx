@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    padding: 2rem;
     max-width: 1980px;
-    height: 100%;
-    box-sizing: border-box;
+    height: auto;
+    max-height: 90vh;
     &:before,
     &:after{
         content: " ";

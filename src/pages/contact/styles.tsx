@@ -23,4 +23,5 @@ export const CentralizedContent = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
 `;

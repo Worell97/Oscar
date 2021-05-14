@@ -7,6 +7,10 @@ type Props = {
     children: React.ReactNode;
 }
 
+type ListProps = {
+    children: React.ReactNode;
+}
+
 export function Button({className, href, children}: Props){
     return(
         <StyledButton>
@@ -17,7 +21,7 @@ export function Button({className, href, children}: Props){
     );
 };
 
-export function ButtonList({className, href, children}: Props){
+export function ButtonList({children}: ListProps){
     return(
         <StyledButtonList>
             {children}

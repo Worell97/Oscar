@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MainPage from './pages/main';
+import MainPage from './components/main';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 

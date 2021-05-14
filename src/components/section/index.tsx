@@ -3,12 +3,13 @@ import {DeafaultSection, Header} from './styles';
 
 type Props = {
   children: React.ReactNode;
-  HeaderText: String;
+  HeaderText: string;
+  customstyle: string;
 }
-function Section({ children, HeaderText }: Props) {
+function Section({ children, HeaderText, customstyle }: Props) {
     return (
-      <DeafaultSection>
-        {(HeaderText.length > 0 ? <Header>{HeaderText}</Header>: '')}
+      <DeafaultSection customstyle={customstyle}>
+        {(HeaderText !== ''? <Header>{HeaderText}</Header>:<></>)}
         {children}
       </DeafaultSection>
     );
