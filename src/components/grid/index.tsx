@@ -1,12 +1,8 @@
-
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    max-width: 1360px;
-    padding-right: 15px;
-    padding-left: 5px;
-    marging-right: auto;
-    marging-left: auto;
+    max-width: 1980px;
+    height: 100%;
     box-sizing: border-box;
     &:before,
     &:after{
@@ -20,8 +16,8 @@ export const Container = styled.div`
 `
 
 export const Row = styled.div`
-    width 100%;
-    height: auto;
+    width auto;
+    height: 100%;
     float: left;
     box-sizing: border-box;
     &:before,
@@ -35,17 +31,28 @@ export const Row = styled.div`
 
 `;
 
-export const Column = styled.div`
+type Props = {
+    gridLength: number;
+    children: React.ReactNode;
+}
+
+export const Column = ({ gridLength, children }: Props) => {
+    return (
+      <GridColumn gridLength={gridLength}>
+        {children}
+      </GridColumn>
+    );
+};
+
+const GridColumn = styled.div<Props>`
     float: left;
     padding: 0.5rem;
     min-height: 1px;
     box-sizing: border-box;
     width: 100%;
-    background-color: var(--blackLighter);
-    border-right: 2px solid var(--primary);
-    border-left: 2px solid var(--primary);
+    height: 100%;
 
     @media only screen and (min-width: 768px){
-        width: ${props => (props.grid ? props.grid / 12 * 100: '8.33')}%;    
+        width: ${props => (props.gridLength ? props.gridLength / 12 * 100: '8.33')}%;    
     }
 `;
