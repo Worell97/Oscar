@@ -4,15 +4,19 @@ import Home from '../../pages/home';
 import {Main} from './styles';
 import Menu from '../menu';
 import Contact from '../../pages/contact';
+import Experience from '../../pages/experience';
 
 function MainPage(){
     return(
-        <Main>
+        <>
             <Menu/>
-            <Home/>
-            <AboutMe/>             
-            <Contact/>
-        </Main>
+            <Main>
+                <Home/>
+                <AboutMe/> 
+                <Experience/>            
+                <Contact/>
+            </Main>
+        </>
     );
 }
 

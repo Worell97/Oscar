@@ -1,19 +1,27 @@
-import React, {useState, useEffect} from 'react';
-import {Container, Row, Column} from '../../components/grid';
-import ProfilePictureAsset from '../../assets/Perfil.jpg';
-import {CentralizedContent, ProfilePicture, Resume} from './styles';
+import React from 'react';
+import {Content, Grid, SocialMediaPicture, SocialMedia} from './styles';
+import TwitterIcon from '../../assets/twitter-ico.png';
+import FaceIcon from '../../assets/facebook-ico.png';
+import LinkedinIcon from '../../assets/linkedin-ico.png';
 import Section from '../../components/section';
 
 function Contact(){
     return(
-        <Section HeaderText='' customstyle="background-color: var(--black);">
-            <ProfilePicture src={ProfilePictureAsset} alt="Eu"/>
-            <div style={{textAlign: 'center'}}></div>
-            <CentralizedContent>
-                <Resume>
-                    <h1># Hi there My name is Oscar Worell Filho 👋</h1>
-                </Resume>
-            </CentralizedContent>
+        <Section HeaderText='' customstyle="background-color: var(--primary);">
+        <Grid>
+            <Content>
+                <ul>
+                    <li><a href="mailto:worell-oscar@hotmail.com.br">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/oscar-worell-5740ab139/">Likedin</a></li>                
+                    <li><a href="http://api.whatsapp.com/send?phone=+5545998543680">WhatsApp</a></li>
+                </ul>
+            </Content>
+            <SocialMedia>
+                <a href="https://twitter.com/OscarWorell"><SocialMediaPicture src={FaceIcon} alt="Facebook"/></a>
+                <a href="https://www.linkedin.com/in/oscar-worell-5740ab139/"><SocialMediaPicture src={LinkedinIcon} alt="Likedin"/></a>
+                <a href="https://twitter.com/OscarWorell"><SocialMediaPicture src={TwitterIcon} alt="Twitter"/></a>             
+            </SocialMedia>
+        </Grid>
         </Section>
     );
 }

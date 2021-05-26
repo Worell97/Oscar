@@ -17,9 +17,10 @@ export const TechnologyPicture = styled.img`
 `;
 export const Grid = styled.section`
     display: grid; 
+    flex-wrap: wrap;
     grid-template-areas: 
-        "sidebar content techs"
-        "sidebar content techs"
+        "content content"
+        "techs techs"
     ;
 `;
 
@@ -30,12 +31,16 @@ export const Sidebar = styled.div`
 `;
 
 export const Content = styled.div`
-    grid-area: sidebar;
+    grid-area: content;
+    align-items: space-between;
     padding: 5px;
 `;
 
 export const Techs = styled.div`
     grid-area: techs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
 `;
 

@@ -25,3 +25,44 @@ export const CentralizedContent = styled.div`
     flex-direction: column;
     height: 100%;
 `;
+
+
+export const Grid = styled.section`
+    display: grid; 
+    flex-wrap: wrap;
+    grid-template-areas: 
+        "content content"
+        "techs techs"
+    ;
+    margin: auto;
+`;
+
+
+export const Sidebar = styled.div`
+    grid-area: sidebar;
+    padding: 5px;
+`;
+
+export const Content = styled.div`
+    grid-area: content;
+    align-items: space-between;
+    padding: 5px;
+`;
+
+export const SocialMedia = styled.div`
+    grid-area: techs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+`;
+
+
+export const SocialMediaPicture = styled.img`
+    padding: 5px;
+    min-width: 50px;  
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 auto;
+    border-radius: 15%;
+`;

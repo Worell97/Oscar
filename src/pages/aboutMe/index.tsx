@@ -5,6 +5,7 @@ import Html from '../../assets/icons8-html-5-50.png';
 import CSS from '../../assets/icons8-css3-50.png';
 import JavaScript from '../../assets/icons8-javascript-50.png';
 import ReactPng from '../../assets/icons8-react-50.png';
+import JavaPng from '../../assets/icons8-java-50.png';
 import {Content, Grid, Resume, TechnologyPicture, Techs} from './styles';
 import Section from '../../components/section';
 
@@ -22,17 +23,18 @@ function AboutMe(){
                         <p>- I really want to work on web projects because on my studies with web 
                         development I'm fell very excited when I saw the things that I can do on web, like this website that I made by myself.</p>
                         <p>- Studing Systems Analysis and Development (SAD) at Unicesumar</p>
-                        <p>- Studing English for 1-2 years</p>
+                        <p>- Studing English for +2 years</p>
                     </Resume>
                 </Content>
                 <Techs>
-                    <div style={{marginTop: '10%'}}>
+                    <div>
                         <h3 style={{textAlign: 'center'}}>Technolgies that I know</h3>
                         <TechnologyPicture src={Delphi} alt="Delphi"/>
                         <TechnologyPicture src={Html} alt="HTML"/>
                         <TechnologyPicture src={CSS} alt="CSS"/>
                         <TechnologyPicture src={JavaScript} alt="JavaScript"/>
                         <TechnologyPicture src={ReactPng} alt="React"/>
+                        <TechnologyPicture style={{borderRadius: '50%'}} src={JavaPng} alt="Java"/>
                     </div>                   
                 </Techs>
             </Grid>
