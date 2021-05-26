@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React from 'react';
 import AboutMe from '../../pages/aboutMe';
 import Home from '../../pages/home';
 import {Main} from './styles';

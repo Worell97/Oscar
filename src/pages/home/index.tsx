@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import {Container, Row, Column} from '../../components/grid';
+import React from 'react';
 import ProfilePictureAsset from '../../assets/Perfil.jpg';
 import {CentralizedContent, ProfilePicture, Resume} from './styles';
 import Section from '../../components/section';

@@ -1,7 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import {Container, Row, Column} from '../../components/grid';
-import ProfilePictureAsset from '../../assets/Perfil.jpg';
-import {CentralizedContent, ProfilePicture, Resume} from './styles';
+import React from 'react';
 import Section from '../../components/section';
 
 function Contact(){

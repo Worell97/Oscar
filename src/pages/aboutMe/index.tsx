@@ -1,5 +1,4 @@
 import React from 'react';
-import {Container, Row, Column} from '../../components/grid';
 import Delphi from '../../assets/icons8-delphi-ide-50.png';
 import Html from '../../assets/icons8-html-5-50.png';
 import CSS from '../../assets/icons8-css3-50.png';
