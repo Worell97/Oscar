@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfilePicture = styled.img`
-    max-width: 300px;
+    max-width: 250px;
     min-width: 16px; 
     width: 100%;    
     border-radius: 50%;    
@@ -23,4 +23,48 @@ export const CentralizedContent = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+`;
+
+
+
+
+export const Grid = styled.section`
+    display: grid; 
+    flex-wrap: wrap;
+    grid-template-areas: 
+        "sidebar space"
+        "sidebar content"
+        "sidebar content"
+    ;
+    margin: auto;
+`;
+
+
+export const Sidebar = styled.div`
+    grid-area: sidebar;
+    padding: 5px;
+`;
+
+export const Content = styled.div`
+    grid-area: content;
+    align-items: space-between;
+    padding: 5px;
+`;
+
+export const SocialMedia = styled.div`
+    grid-area: techs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+`;
+
+
+export const SocialMediaPicture = styled.img`
+    padding: 5px;
+    min-width: 50px;  
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 auto;
+    border-radius: 15%;
 `;

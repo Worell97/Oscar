@@ -1,5 +1,5 @@
 import React from 'react';
-import {Content, Grid, SocialMediaPicture, SocialMedia} from './styles';
+import {Content, Grid, SocialMediaPicture, SocialMedia, CustomList, CustomItem} from './styles';
 import TwitterIcon from '../../assets/twitter-ico.png';
 import FaceIcon from '../../assets/facebook-ico.png';
 import LinkedinIcon from '../../assets/linkedin-ico.png';
@@ -10,11 +10,11 @@ function Contact(){
         <Section HeaderText='' customstyle="background-color: var(--primary);">
         <Grid>
             <Content>
-                <ul>
-                    <li><a href="mailto:worell-oscar@hotmail.com.br">Email</a></li>
-                    <li><a href="https://www.linkedin.com/in/oscar-worell-5740ab139/">Likedin</a></li>                
-                    <li><a href="http://api.whatsapp.com/send?phone=+5545998543680">WhatsApp</a></li>
-                </ul>
+                <CustomList>
+                    <CustomItem><a href="mailto:worell-oscar@hotmail.com.br">Email</a></CustomItem>
+                    <CustomItem><a href="https://www.linkedin.com/in/oscar-worell-5740ab139/">Likedin</a></CustomItem>                
+                    <CustomItem><a href="http://api.whatsapp.com/send?phone=+5545998543680">WhatsApp</a></CustomItem>
+                </CustomList>
             </Content>
             <SocialMedia>
                 <a href="https://twitter.com/OscarWorell"><SocialMediaPicture src={FaceIcon} alt="Facebook"/></a>
