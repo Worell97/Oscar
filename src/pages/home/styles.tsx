@@ -14,9 +14,6 @@ export const Resume = styled.div`
     border: 0.1px solid var(--grayHigh);
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
-}
-
-
 `;
 
 export const CentralizedContent = styled.div`
@@ -25,9 +22,6 @@ export const CentralizedContent = styled.div`
     flex-direction: column;
 `;
 
-
-
-
 export const Grid = styled.section`
     display: grid; 
     flex-wrap: wrap;
@@ -35,10 +29,11 @@ export const Grid = styled.section`
         "sidebar space"
         "sidebar content"
         "sidebar content"
+        "sidebar space2"
+        "btnNext btnNext"
     ;
     margin: auto;
 `;
-
 
 export const Sidebar = styled.div`
     grid-area: sidebar;
@@ -51,20 +46,9 @@ export const Content = styled.div`
     padding: 5px;
 `;
 
-export const SocialMedia = styled.div`
-    grid-area: techs;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-`;
 
-
-export const SocialMediaPicture = styled.img`
+export const BtnNextSection = styled.button`
+    grid-area: btnNext;
+    align-items: space-between;
     padding: 5px;
-    min-width: 50px;  
-    max-width: 50px;
-    max-height: 50px;
-    margin: 0 auto;
-    border-radius: 15%;
 `;

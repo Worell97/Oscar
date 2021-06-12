@@ -14,6 +14,7 @@
     --white: #c9d1d9;
     --frontEnd: #6BD1FF;
     --backEnd: #00C86F;
+    --DefaultSectionHeigth: 90;
   }
   
   html,
@@ -31,6 +32,4 @@
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    max-height: 90vh;
   }

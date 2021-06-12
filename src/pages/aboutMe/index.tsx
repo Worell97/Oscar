@@ -12,7 +12,6 @@ import Menu from '../../components/menu';
 function AboutMe(){
     return(
         <>
-            <Menu/>
             <Section HeaderText="About Me" customstyle="background-color var(--primary);">
                 <Grid>
                     <Content>

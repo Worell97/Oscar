@@ -5,7 +5,6 @@ import Menu from '../../components/menu';
 function Experience(){
     return(
         <>
-            <Menu/>
             <Section HeaderText='Professional experience' customstyle="background-color: var(--black);">
             <ul>
                 <li>

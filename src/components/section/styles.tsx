@@ -9,7 +9,6 @@ export const DeafaultSection = styled.section<Props>`
     flex-direction: column;
     width: 100%;
     height: 90vh;
-    scroll-snap-align: center;
     padding: 5%;
     ${props => (props.customstyle !== '' ? props.customstyle : '')}
 `;
