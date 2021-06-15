@@ -1,18 +1,23 @@
 import React from 'react';
-import {StyledButton, StyledButtonList} from './styles';
+import {StyledNavBtn, StyledButton, StyledButtonList, StyledNavBtnLink} from './styles';
 
 type Props = {
-    children: React.ReactNode;
+    caption: string;
 }
 
 type ListProps = {
     children: React.ReactNode;
 }
 
-export function Button({children}: Props){
+type LinkProps = {
+    children: React.ReactNode;
+    to: string;
+}
+
+export function Button({caption}: Props){
     return(
         <StyledButton>
-            {children}  
+            {caption} 
         </StyledButton>
     );
 };
@@ -24,3 +29,19 @@ export function ButtonList({children}: ListProps){
         </StyledButtonList>
     );
 };
+
+export function NavBtn({children}: ListProps){
+    return(
+        <StyledNavBtn>
+            {children}
+        </StyledNavBtn>
+    );
+};
+
+export function NavBtnLink({children, to}: LinkProps){
+    return(
+        <StyledNavBtnLink href={to}>
+            {children}
+        </StyledNavBtnLink>
+    );
+}

@@ -1,10 +1,10 @@
 import React from 'react';
 import Section from '../../components/section';
 
-function Experience(){
+function Certifications(){
     return(
         <>
-            <Section HeaderText='Professional experience' customstyle="background-color: var(--black);">
+            <Section HeaderText='Certification' customstyle="background-color: var(--primary);">
             <ul>
                 <li>
                     <section>
@@ -36,4 +36,4 @@ function Experience(){
     );
 }
 
-export default Experience;
+export default Certifications;

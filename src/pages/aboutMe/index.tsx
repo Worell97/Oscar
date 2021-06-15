@@ -7,7 +7,6 @@ import ReactPng from '../../assets/icons8-react-50.png';
 import JavaPng from '../../assets/icons8-java-50.png';
 import {Content, Grid, Resume, TechnologyPicture, Techs} from './styles';
 import Section from '../../components/section';
-import Menu from '../../components/menu';
 
 function AboutMe(){
     return(
@@ -16,13 +15,12 @@ function AboutMe(){
                 <Grid>
                     <Content>
                         <Resume>
-                            <p># Hi there My name is Oscar Worell Filho 👋</p>
-                            <p>- I’m currently working as a developer with Delphi 10 on a project named SysmoVS at Sysmo Smart Systems
-                                where I use to maintain the system and apply new features.
+                            <p>- I’m currently working as a web developer with React.Js on this personal project where I still working on the front-end but I want to make this dynamic
+                                cosuming an API on node.js that I'll make soon as possible.
                             </p>
                             <p>- I’m learning web development(React, node.js, css, typescript) and flutter for mobile at <a href="https://app.balta.io">balta.io</a></p>
                             <p>- I really want to work on web projects because on my studies with web 
-                            development I'm fell very excited when I saw the things that I can do on web, like this website that I made by myself.</p>
+                            development I'm fell very excited when I saw the things that I can do on web, like this website that I'm making by myself.</p>
                             <p>- Studing Systems Analysis and Development (SAD) at Unicesumar</p>
                             <p>- Studing English for +2 years</p>
                         </Resume>

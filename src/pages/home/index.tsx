@@ -1,6 +1,6 @@
 import React from 'react';
 import ProfilePictureAsset from '../../assets/Perfil.jpg';
-import {CentralizedContent, ProfilePicture, Resume, Content, Grid, Sidebar, BtnNextSection} from './styles';
+import {CentralizedContent, ProfilePicture, Resume, Content, Grid, Sidebar} from './styles';
 import Section from '../../components/section';
 
 function Home(){
@@ -18,7 +18,6 @@ function Home(){
                         </Resume>
                     </CentralizedContent>
                 </Content>
-                <BtnNextSection></BtnNextSection>
             </Grid>
         </Section>
     );
