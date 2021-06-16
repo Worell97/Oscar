@@ -1,16 +1,9 @@
 import React from 'react';
 import {StyledMenu, StyledNavMenu, NavMenuItem} from './styles';
 import {NavBtn, NavBtnLink, Button} from '../button';
-import {Link} from 'react-scroll';
-import useWindowDimensions from '../getWindowDimension';
 import { StyledSandWichButton } from '../button/styles';
 
 const Menu = () => {
-    const {height} = useWindowDimensions();
-
-    function viewHeigthToPx(distance: number) {
-        return (distance/100) * height;
-    };
 
     function scrollToElement(elementId: string){
         var element = document.getElementById(elementId);
