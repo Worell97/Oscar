@@ -4,7 +4,7 @@ import Section from '../../components/section';
 function Experience(){
     return(
         <>
-            <Section HeaderText='Professional experience' customstyle="background-color: var(--black);">
+            <Section elementName="Experience" HeaderText='Professional experience' customstyle="background-color: var(--black);">
             <ul>
                 <li>
                     <section>

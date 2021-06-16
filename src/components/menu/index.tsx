@@ -5,62 +5,29 @@ import {Link} from 'react-scroll';
 import useWindowDimensions from '../getWindowDimension';
 import { StyledSandWichButton } from '../button/styles';
 
-function Menu(){ 
+const Menu = () => {
     const {height} = useWindowDimensions();
 
     function viewHeigthToPx(distance: number) {
         return (distance/100) * height;
     };
+
+    function scrollToElement(elementId: string){
+        var element = document.getElementById(elementId);
+        console.log(elementId)
+        if(element){
+            element.scrollIntoView({behavior: "smooth"});
+        }
+    }
     return(
         <StyledMenu>
-            <Link
-                activeClass="active"
-                to="Home"
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-viewHeigthToPx(10)}
-            >
-                <Button caption = "Oscar Worell Filho"/>
-            </Link> 
+                <Button caption="Oscar Worell Filho" onClick={(event: React.MouseEvent<HTMLElement>) => {scrollToElement("Home")}}/>
             <StyledSandWichButton/>
             <StyledNavMenu>               
-                <Link
-                    activeClass="active"
-                    to="AboutMe"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-viewHeigthToPx(10)}> 
-                    <NavMenuItem>About me</NavMenuItem>
-                </Link>             
-                <Link
-                        activeClass="active"
-                        to="Experience"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                        offset={-viewHeigthToPx(10)}>
-                    <NavMenuItem>Career</NavMenuItem>
-                </Link>          
-                <Link
-                    activeClass="active"
-                    to="Certifications"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-viewHeigthToPx(10)}>
-                    <NavMenuItem>Certification</NavMenuItem>
-                </Link>        
-                <Link
-                    activeClass="active"
-                    to="Contact"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    offset={-viewHeigthToPx(10)}>
-                    <NavMenuItem>Contact</NavMenuItem>
-                </Link>   
+                <NavMenuItem onClick={(event: React.MouseEvent<HTMLElement>) => {scrollToElement("AboutMe")}}>About me</NavMenuItem> 
+                <NavMenuItem onClick={(event: React.MouseEvent<HTMLElement>) => {scrollToElement("Experience")}}>Career</NavMenuItem>
+                <NavMenuItem onClick={(event: React.MouseEvent<HTMLElement>) => {scrollToElement("Certifications")}}>Certification</NavMenuItem>
+                <NavMenuItem onClick={(event: React.MouseEvent<HTMLElement>) => {scrollToElement("Contact")}}>Contact</NavMenuItem>
             </StyledNavMenu>
             <NavBtn> 
                 <NavBtnLink to="https://github.com/Worell97">

@@ -5,13 +5,15 @@ type Props ={
 }
 
 export const DeafaultSection = styled.section<Props>`
+    scroll-snap-align: start;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     width: 100%;
     height: 90vh;
     padding: 5%;
     ${props => (props.customstyle !== '' ? props.customstyle : '')}
 `;
+
 export const Header = styled.h1` 
     text-align: center;
 `;

@@ -18,12 +18,12 @@ export const StyledMenu = styled.nav`
 
   background: var(--primary);
   border-bottom: 0.2px solid var(--grayHigh);
-}`;
+`;
 
 
 export const StyledNavMenu = styled.div`
     display: flex;
-    align: center;
+    align-items: center;
     margin-right: -24px;
     justify-content: space-between;
 

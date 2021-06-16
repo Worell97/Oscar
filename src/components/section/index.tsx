@@ -1,20 +1,23 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import {DeafaultSection, Header} from './styles';
 
 
 type Props = {
+  elementName: string; // used on react-scroll
   children: React.ReactNode;
   HeaderText: string;
   customstyle: string;
 };
 
-function Section({ children, HeaderText, customstyle }: Props) {
+function Section({elementName, children, HeaderText, customstyle }: Props) {
   return(
-    <DeafaultSection customstyle={customstyle}>
-      {(HeaderText !== ''? <Header>{HeaderText}</Header>:<></>)}
-      {children}
-    </DeafaultSection>
-      
+    <Element name={elementName}>
+      <DeafaultSection customstyle={customstyle} id={elementName}>
+          {(HeaderText !== ''? <Header>{HeaderText}</Header>:<></>)}
+          {children}
+      </DeafaultSection>
+    </Element>      
   );
 };
   

@@ -1,8 +1,9 @@
 import React from 'react';
 import {StyledNavBtn, StyledButton, StyledButtonList, StyledNavBtnLink} from './styles';
 
-type Props = {
+type ButtonProps = {
     caption: string;
+    onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 type ListProps = {
@@ -14,9 +15,9 @@ type LinkProps = {
     to: string;
 }
 
-export function Button({caption}: Props){
+export function Button({caption, onClick}: ButtonProps){
     return(
-        <StyledButton>
+        <StyledButton onClick={onClick}>
             {caption} 
         </StyledButton>
     );

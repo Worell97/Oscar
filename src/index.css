@@ -29,7 +29,4 @@
   
   #root{
     scroll-behavior: smooth;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
   }

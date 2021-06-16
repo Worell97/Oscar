@@ -4,7 +4,7 @@ import Section from '../../components/section';
 function Certifications(){
     return(
         <>
-            <Section HeaderText='Certification' customstyle="background-color: var(--primary);">
+            <Section elementName="Certifications" HeaderText='Certification' customstyle="background-color: var(--primary);">
             <ul>
                 <li>
                     <section>

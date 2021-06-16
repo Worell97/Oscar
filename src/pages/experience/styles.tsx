@@ -14,9 +14,6 @@ export const Resume = styled.div`
     border: 0.1px solid var(--grayHigh);
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
-}
-
-
 `;
 
 export const CentralizedContent = styled.div`
