@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyledContainer } from './styles';
 import {
     Events,
-    animateScroll as scroll,
     scrollSpy
   } from "react-scroll";
 import ScrollSnap from 'scroll-snap';
@@ -24,43 +23,19 @@ function callBack() {
     console.log('snapped')    
 }
 
-class Container extends React.Component<any, Props>{
-    container = React.createRef<HTMLDivElement>();
-    constructor(props: Props | Readonly<Props>){
-        super(props);
-        this.scrollToTop = this.scrollToTop.bind(this);
-    }
+function Container(content: Props){
+    const container = React.createRef<HTMLDivElement>();
 
-    scrollToTop() {
-        scroll.scrollToTop();
-    }
-
-    scrollToBottom() {
-      scroll.scrollToBottom();
-    }
-    
-    scrollTo(target: number) {
-        scroll.scrollTo(target);
-    }
-
-    scrollMore(){
-      scroll.scrollMore(100);
-    }
-
-    handleSetActive(to: string){
-      console.log(to);
-    }
-
-    bindScrollSnap(){
-        const element = this.container.current;
+    function bindScrollSnap(){
+        const element = container.current;
         if (element){
             const snapElement = new ScrollSnap(element, snapConfig);
             snapElement.bind(callBack);
         }
     };
 
-    componentDidMount() {
-        this.bindScrollSnap();
+    useEffect(() => {
+        bindScrollSnap();
         Events.scrollEvent.register("begin", function() {
         console.log("begin", arguments);
         });
@@ -70,20 +45,13 @@ class Container extends React.Component<any, Props>{
         });        
 
         scrollSpy.update();
-    }
-
-    componentWillUnmount() {
-        Events.scrollEvent.remove("begin");
-        Events.scrollEvent.remove("end");
-    } 
+    });
     
-    render(){
-        return(
-            <StyledContainer>
-                {this.props.children}
-            </StyledContainer>
-        )
-    }
+    return(
+        <StyledContainer>
+            {content.children}
+        </StyledContainer>
+    )
 }
 
 export default Container;

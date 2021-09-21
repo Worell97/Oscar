@@ -1,39 +1,27 @@
-import React from 'react';
 import Section from '../../components/section';
+import React, { useEffect, useCallback, useState } from 'react';
+import axios, { AxiosResponse } from 'axios';
+import data from '../../data/filesPath';
+import CarouselCustom from '../../components/Carousel';
 
-function Certifications(){
-    return(
-        <>
-            <Section elementName="Certifications" HeaderText='Certification' customstyle="background-color: var(--primary);">
-            <ul>
-                <li>
-                    <section>
-                            <h3>02/2018 – 04/2019 – Rhede Sistemas.</h3>
-                            <p>Cargo: Delphi/Pascal Developer Jr.</p>
-                            Principais atividades: Desenvolvimento do projeto i9v3, criação de scripts em
-                            pascal para manipulação do banco de dados e geração de relatórios.
-                    </section>
-                </li>
-                <li>
-                    <section>
-                            <h3>10/2019 – 12/2020 – Eco Centauro Sistemas Inteligentes.</h3>
-                            <p>Cargo: Delphi Developer Jr.</p>
-                            Principais atividades: Desenvolvimento do projeto Eco, aplicando correções e
-                            novas soluções ao sistema no setor financeiro.
-                    </section>
-                </li>
-                <li>
-                    <section>
-                            <h3>12/2020 – 06/2021 – Sysmo Sistemas.</h3>
-                            <p>Cargo: Delphi Developer.</p>
-                            Principais atividades: Desenvolvimento do projeto S1, aplicando correções e
-                            novas soluções ao sistema no setor de logistica.
-                    </section>
-                </li>
-            </ul>
-            </Section>
-        </>
-    );
-}
+
+
+function Certifications() {
+    /*const filePath = 'D:/User/OneDrive/ProjetosOscar/resume/BackEnd/server/data/certificados/';
+    const [files, setCertifications] = useState<AxiosResponse>();
+    const fetchData = useCallback(() => {
+        axios.get("/api/certifications").then(res => setCertifications(res));
+    }, [setCertifications]);
+    useEffect(() => {
+        fetchData();
+    }, [fetchData])*/
+    return data ? (
+        <Section elementName="Certifications" HeaderText='Certification' customstyle="background-color: var(--primary);">
+            <CarouselCustom Itens={data}/>
+        </Section>
+    ):<>
+
+    </>
+};
 
 export default Certifications;

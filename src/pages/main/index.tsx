@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from '../home';
 import Menu from '../../components/menu';
 import AboutMe from '../aboutMe';
@@ -9,7 +8,7 @@ import Container from '../../components/container';
 
 function MainPage (){
     return(
-        <Container>
+        <Container HeaderText="" customstyle="">
             <Menu/> 
             <Home/>
             <AboutMe/>
