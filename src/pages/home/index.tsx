@@ -5,7 +5,7 @@ import Section from '../../components/section';
 
 function Home(){
     return(
-        <Section elementName="Home" HeaderText='' customstyle="background-color: var(--black);">
+        <Section elementName="Home" HeaderText='' customstyle="background-color: var(--black); witdh: 90vh">
             <Grid>
                 <Sidebar>
                     <ProfilePicture src={ProfilePictureAsset} alt="Eu"/>
