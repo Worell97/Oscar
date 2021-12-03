@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ItemCarousel = styled.img`
-    width: auto;
-    height: 40rem;
+    width: 40rem;
+    height: auto;
 `;
 
 export const CertificationList = styled.ul`
