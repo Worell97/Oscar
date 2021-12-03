@@ -5,11 +5,18 @@ import { StyledSandWichButton } from '../button/styles';
 
 const Menu = () => {
 
+    function convertPXToVW() {
+        return document.documentElement.clientHeight * -0.10;
+    }
+
     function scrollToElement(elementId: string){
         var element = document.getElementById(elementId);
-        console.log(elementId)
+        const yOffset = convertPXToVW();
+        console.log(yOffset);
         if(element){
-            element.scrollIntoView({behavior: "smooth"});
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            console.log(y);
+            window.scrollTo({top: y, behavior: "smooth"});
         }
     }
     return(

@@ -9,10 +9,10 @@ const TimeLineItem: React.FC<TimeLineItemProps> = ({data}) => {
     return(
         <div className="timeline-item">
             <div className="timeline-item-content">
+                <time>{data.StartDate} -  </time>
                 <span className="tag" style={{background: data.Category.color}}> 
-                    {data.Category.tag}
+                    {data.Title}
                 </span>
-                <time>{data.StartDate}</time>
                 <h2>{data.Company}</h2>
                 <title>{data.Title}</title>
                 <p>{data.Description}</p>

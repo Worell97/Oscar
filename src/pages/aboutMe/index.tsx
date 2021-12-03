@@ -11,7 +11,7 @@ import Section from '../../components/section';
 function AboutMe(){
     return(
         <>
-            <Section elementName="AboutMe" HeaderText="About Me" customstyle="background-color var(--primary);">
+            <Section elementName="AboutMe" HeaderText="About Me" customstyle="background-color var(--primary); height: 90vh">
                 <Grid>
                     <Content>
                         <Resume>

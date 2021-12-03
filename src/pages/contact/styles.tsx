@@ -38,3 +38,8 @@ export const SocialMediaPicture = styled.img`
     margin: 0 auto;
     border-radius: 15%;
 `;
+
+export const CustomLink = styled.a`
+    text-decoration: none;
+    color: var(--white)
+`;

@@ -6,7 +6,7 @@ import CarouselCustom from '../../components/Carousel';
 
 function Certifications() {
     return data ? (
-        <Section elementName="Certifications" HeaderText='Certification' customstyle="background-color: var(--primary);">
+        <Section elementName="Certifications" HeaderText='Certification' customstyle="background-color: var(--primary); height: 90vh">
             <CarouselCustom Itens={data}/>
         </Section>
     ):<>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ItemCarousel = styled.img`
-    width: 40rem;
+    width: 35rem;
     height: auto;
 `;
 
