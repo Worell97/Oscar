@@ -12,14 +12,14 @@ function Contact() {
                 <Content>
                     <CustomList>
                         <CustomItem><CustomLink href="mailto:worell-oscar@hotmail.com.br">E-mail</CustomLink></CustomItem>
-                        <CustomItem><CustomLink href="https://www.linkedin.com/in/oscar-worell-5740ab139/">Linkedin</CustomLink></CustomItem>
-                        <CustomItem><CustomLink href="http://api.whatsapp.com/send?phone=+5545998543680">WhatsApp</CustomLink></CustomItem>
+                        <CustomItem><CustomLink href="https://www.linkedin.com/in/oscar-filho-5740ab139/" target="_blank">Linkedin</CustomLink></CustomItem>
+                        <CustomItem><CustomLink href="https://wa.me/5545998543680" target="_blank">WhatsApp</CustomLink></CustomItem>
                     </CustomList>
                 </Content>
                 <SocialMedia>
-                    <a href="https://twitter.com/OscarWorell"><SocialMediaPicture src={FaceIcon} alt="Facebook" /></a>
-                    <a href="https://www.linkedin.com/in/oscar-worell-5740ab139/"><SocialMediaPicture src={LinkedinIcon} alt="Linkedin" /></a>
-                    <a href="https://twitter.com/OscarWorell"><SocialMediaPicture src={TwitterIcon} alt="Twitter" /></a>
+                    <a href="https://www.facebook.com/oscar.worell/" target="_blank"><SocialMediaPicture src={FaceIcon} alt="Facebook" /></a>
+                    <a href="https://www.linkedin.com/in/oscar-filho-5740ab139/" target="_blank"><SocialMediaPicture src={LinkedinIcon} alt="Linkedin" /></a>
+                    <a href="https://twitter.com/OscarWorell" target="_blank"><SocialMediaPicture src={TwitterIcon} alt="Twitter" /></a>
                 </SocialMedia>
             </Grid>
         </Section>
