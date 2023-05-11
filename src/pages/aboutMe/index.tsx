@@ -21,15 +21,15 @@ function AboutMe() {
                             </p>
                             <p>I am always eager to learn new technologies and methodologies to improve my work and bring added value to the projects I am involved in.
                                 Currently, I am studying English to further expand my career opportunities and work with international teams,
-                                and studing Systems Analysis and Development (SAD) at UniPar looking to finish mi graduation as soon as possible.</p>
-                            <p>And I really enjoy to work on web projects and i love the things that I can do on web, like this website that I'm making by myself,
-                                furthermore I'm planing to make it dynamic, maybe creating an api with Java or node and with that an admin panel, soo I'll be able to edit all the info more easily.</p>
+                                and studiyng Systems Analysis and Development (SAD) at UniPar looking to finish my graduation as soon as possible.</p>
+                            <p>And I really enjoy to work on web projects and I love the things that I can do on web, like this website that I'm making by myself,
+                                furthermore I'm planing to make it dynamic, maybe creating an api with Java or node and with that an admin panel, so I'll be able to edit all the info more easily.</p>
                         </Resume>
                     </Content>
                     <Techs>
                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                             <h3 style={{ textAlign: 'center' }}>Technolgies that I know</h3>
-                            <div style={{ display: 'flex', width: '600px', justifyContent: 'space-between' }}>
+                            <div style={{ display: 'flex', margin: '0 5px', justifyContent: 'space-between' }}>
                                 <TechnologyPicture src={Delphi} alt="Delphi" />
                                 <TechnologyPicture src={Html} alt="HTML" />
                                 <TechnologyPicture src={CSS} alt="CSS" />

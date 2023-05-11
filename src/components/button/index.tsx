@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyledNavBtn, StyledButton, StyledButtonList, StyledNavBtnLink} from './styles';
+import { StyledNavBtn, StyledButton, StyledButtonList, StyledNavBtnLink } from './styles';
 
 type ButtonProps = {
     caption: string;
@@ -15,33 +15,33 @@ type LinkProps = {
     to: string;
 }
 
-export function Button({caption, onClick}: ButtonProps){
-    return(
+export function Button({ caption, onClick }: ButtonProps) {
+    return (
         <StyledButton onClick={onClick}>
-            {caption} 
+            {caption}
         </StyledButton>
     );
 };
 
-export function ButtonList({children}: ListProps){
-    return(
+export function ButtonList({ children }: ListProps) {
+    return (
         <StyledButtonList>
             {children}
         </StyledButtonList>
     );
 };
 
-export function NavBtn({children}: ListProps){
-    return(
+export function NavBtn({ children }: ListProps) {
+    return (
         <StyledNavBtn>
             {children}
         </StyledNavBtn>
     );
 };
 
-export function NavBtnLink({children, to}: LinkProps){
-    return(
-        <StyledNavBtnLink href={to}>
+export function NavBtnLink({ children, to }: LinkProps) {
+    return (
+        <StyledNavBtnLink href={to} target="_blank">
             {children}
         </StyledNavBtnLink>
     );

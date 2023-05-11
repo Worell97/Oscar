@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {FaBars} from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
 export const StyledButton = styled.button`
     color: var(--white);
@@ -29,11 +29,7 @@ export const StyledButtonList = styled.div`
 export const StyledNavBtn = styled.nav`
     display: flex;
     align-items: center;
-    margin-right: -24px;
-
-    @media screen and (max-width: 768px){
-        display: none;
-    }
+    margin-right: 10px;
 `;
 
 export const StyledNavBtnLink = styled.a`
@@ -60,12 +56,10 @@ export const StyledSandWichButton = styled(FaBars)`
     color: #fff;
 
     @media screen and (max-width: 768px){
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 75%);
-        font-size: 1,8rem;
+        display: inline-block;
+        font-size: 1.8rem;
+        height: 100%;
+        margin-right: 1.5rem;
         cursor: pointer;
     }
 `;

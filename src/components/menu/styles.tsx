@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const StyledMenu = styled.nav`
   width: 100%;
-  height: 10vh;
+  height: 100px;
   z-index: 100;
+  box-sizing: border-box;
 
   display: flex;
   justify-content: space-between;
@@ -13,8 +14,7 @@ export const StyledMenu = styled.nav`
   top: 0;
   left: 0;
   right: 0;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
-  padding-left: 0.5rem;
+  padding: 0.5rem;
 
   background: var(--primary);
   border-bottom: 0.2px solid var(--grayHigh);
@@ -24,7 +24,6 @@ export const StyledMenu = styled.nav`
 export const StyledNavMenu = styled.div`
     display: flex;
     align-items: center;
-    margin-right: -24px;
     justify-content: space-between;
 
     @media screen and (max-width: 768px){
