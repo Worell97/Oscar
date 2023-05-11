@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-type Props ={
-    customstyle: string 
+type Props = {
+    customstyle: string
 }
 
 export const DeafaultSection = styled.section<Props>`

@@ -8,10 +8,18 @@ import JavaPng from '../../assets/icons8-java-50.png';
 import { Content, Grid, Resume, TechnologyPicture, Techs } from './styles';
 import Section from '../../components/section';
 
+const style = `
+    background-color var(--primary); 
+    @media only screen and (max-width: 640px){
+        height: auto;
+    }
+    height: 90vh;
+`;
+
 function AboutMe() {
     return (
         <>
-            <Section elementName="AboutMe" HeaderText="About Me" customstyle="background-color var(--primary); height: 90vh">
+            <Section elementName="AboutMe" HeaderText="About Me" customstyle={style}>
                 <Grid>
                     <Content>
                         <Resume>

@@ -7,7 +7,7 @@ import Section from '../../components/section';
 
 function Contact() {
     return (
-        <Section elementName="Contact" HeaderText='' customstyle="height: 40%; background-color: var(--black);">
+        <Section elementName="Contact" HeaderText='' customstyle="height: 30%; background-color: var(--black);">
             <Grid>
                 <Content>
                     <CustomList>

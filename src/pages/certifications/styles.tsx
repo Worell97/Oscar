@@ -22,3 +22,24 @@ export const CentralizedContent = styled.div`
     flex-direction: column;
     height: 100%;
 `;
+
+export const CertificationsWrapper = styled.div`
+    .CertificationsText{
+        display: none;
+    }
+    @media screen and (max-width: 630px) {
+       .Carrousel{
+            display: none;
+        }
+        .CertificationsText{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            >ul >li{
+                margin-bottom: 10px;
+            }
+        }
+        height: auto;
+    }  
+`;
